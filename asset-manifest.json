@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/clearSkin/static/css/main.066b3154.css",
-    "main.js": "/clearSkin/static/js/main.53bb211a.js",
+    "main.js": "/clearSkin/static/js/main.ce5995ce.js",
     "static/js/453.53121f96.chunk.js": "/clearSkin/static/js/453.53121f96.chunk.js",
     "static/media/Explanation2.png": "/clearSkin/static/media/Explanation2.2967b609c3ae99d0eaee.png",
     "static/media/Price5.jpg": "/clearSkin/static/media/Price5.4ba209b1bf89997f2ed0.jpg",
@@ -12,7 +12,6 @@
     "static/media/Price2.jpg": "/clearSkin/static/media/Price2.cf63d2c2cbe5002c5c53.jpg",
     "static/media/Explanation1.jpg": "/clearSkin/static/media/Explanation1.8eb0bcc30032e4c654d6.jpg",
     "static/media/Price6.jpg": "/clearSkin/static/media/Price6.e604457a9d45a277d377.jpg",
-    "static/media/Price1.5.jpg": "/clearSkin/static/media/Price1.5.d0d8a37b165fc3d53bdc.jpg",
     "static/media/Price1.jpg": "/clearSkin/static/media/Price1.0251b2f2248b27c0a6fb.jpg",
     "static/media/micronid_photo.jpg": "/clearSkin/static/media/micronid_photo.91a4e40d38f592e56869.jpg",
     "static/media/Whywe2.jpg": "/clearSkin/static/media/Whywe2.6ba106e6931889b2ea8f.jpg",
@@ -22,11 +21,11 @@
     "static/media/Price1.1.webp": "/clearSkin/static/media/Price1.1.ba9af1f26f3fd3cf0a81.webp",
     "index.html": "/clearSkin/index.html",
     "main.066b3154.css.map": "/clearSkin/static/css/main.066b3154.css.map",
-    "main.53bb211a.js.map": "/clearSkin/static/js/main.53bb211a.js.map",
+    "main.ce5995ce.js.map": "/clearSkin/static/js/main.ce5995ce.js.map",
     "453.53121f96.chunk.js.map": "/clearSkin/static/js/453.53121f96.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.066b3154.css",
-    "static/js/main.53bb211a.js"
+    "static/js/main.ce5995ce.js"
   ]
 }
