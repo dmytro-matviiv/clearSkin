@@ -10,15 +10,13 @@ import PriceListIMG7 from '../../assets/Price1.1.webp';
 import PriceListIMG8 from '../../assets/Price1.2.jpg';
 import PriceListIMG9 from '../../assets/Price1.3.jpg';
 import PriceListIMG10 from '../../assets/Price1.4.jpg';
-import PriceListIMG11 from '../../assets/Price1.5.jpg';
+
 
 const procedures = [
-    { name: "Шрам до 5см", price: "600-1000 грн" },
-    { name: "Шрам від 5см", price: "1000-2500 грн" },
-    { name: "Рубці пост-акне", price: "800-1500 грн" },
-    { name: "Шрам після кесаревого", price: "1200-1500 грн" },
-    { name: "Шрам після мамопластики", price: "1200-1500 грн" },
-    { name: "Шрам після абдомінопластики", price: "1500-2500 грн" }
+    { name: "Шрам до 5см", price: "700 грн" },
+    { name: "Шрам після кесаревого", price: "1000 грн" },
+    { name: "Шрам після мамопластики", price: "1000 грн" },
+    { name: "Шрам після абдомінопластики", price: "1300 грн" }
 ];
 
 const PriceList = () => {
@@ -31,8 +29,7 @@ const PriceList = () => {
                 <div className="cardList">
                     <div className="cardList-img" style={{ backgroundImage: `url(${PriceListIMG1})` }}></div>
                     <div className="cardList-info">
-                        <p className="text-title">Розтяжки</p>
-                        <p className="text-body">Груди</p>
+                        <p className="text-title">Груди</p>
                     </div>
                     <div className="cardList-footer">
                         <span className="text-title">900-1500 грн</span>
@@ -42,8 +39,7 @@ const PriceList = () => {
                 <div className="cardList">
                     <div className="cardList-img" style={{ backgroundImage: `url(${PriceListIMG2})` }}></div>
                     <div className="cardList-info">
-                        <p className="text-title">Розтяжки</p>
-                        <p className="text-body">Живіт</p>
+                        <p className="text-title">Живіт</p>
                     </div>
                     <div className="cardList-footer">
                         <span className="text-title">900-2000 грн</span>
@@ -53,8 +49,7 @@ const PriceList = () => {
                 <div className="cardList">
                     <div className="cardList-img" style={{ backgroundImage: `url(${PriceListIMG3})` }}></div>
                     <div className="cardList-info">
-                        <p className="text-title">Розтяжки</p>
-                        <p className="text-body">Бока</p>
+                        <p className="text-title">Бока</p>
                     </div>
                     <div className="cardList-footer">
                         <span className="text-title">900-1500 грн</span>
@@ -64,8 +59,7 @@ const PriceList = () => {
                 <div className="cardList">
                     <div className="cardList-img" style={{ backgroundImage: `url(${PriceListIMG4})` }}></div>
                     <div className="cardList-info">
-                        <p className="text-title">Розтяжки</p>
-                        <p className="text-body">Стегна</p>
+                        <p className="text-title">Стегна</p>
                     </div>
                     <div className="cardList-footer">
                         <span className="text-title">900-2000 грн</span>
@@ -77,22 +71,20 @@ const PriceList = () => {
                 <div className="cardList">
                     <div className="cardList-img" style={{ backgroundImage: `url(${PriceListIMG5})` }}></div>
                     <div className="cardList-info">
-                        <p className="text-title">Розтяжки</p>
-                        <p className="text-body">Сідниці</p>
+                        <p className="text-title">Сідниці</p>
                     </div>
                     <div className="cardList-footer">
-                        <span className="text-title">900-1300 грн</span>
+                        <span className="text-title">900-1500 грн</span>
                     </div>
                 </div>
 
                 <div className="cardList">
                     <div className="cardList-img" style={{ backgroundImage: `url(${PriceListIMG6})` }}></div>
                     <div className="cardList-info">
-                        <p className="text-title">Розтяжки</p>
-                        <p className="text-body">Гомілки</p>
+                        <p className="text-title">Гомілки</p>
                     </div>
                     <div className="cardList-footer">
-                        <span className="text-title">900-1300 грн</span>
+                        <span className="text-title">900-1000 грн</span>
                     </div>
                 </div>
             </div>
@@ -116,7 +108,7 @@ const PriceList = () => {
                         <p className="text-title">Шкіра голови</p>
                     </div>
                     <div className="cardList-footer">
-                        <span className="text-title">1200 грн</span>
+                        <span className="text-title">800 грн</span>
                     </div>
                 </div>
 
@@ -126,44 +118,36 @@ const PriceList = () => {
                         <p className="text-title">Обличчя</p>
                     </div>
                     <div className="cardList-footer">
-                        <span className="text-title">1200 грн</span>
+                        <span className="text-title">800 грн</span>
                     </div>
                 </div>
 
                 <div className="cardList">
                     <div className="cardList-img" style={{ backgroundImage: `url(${PriceListIMG9})` }}></div>
                     <div className="cardList-info">
-                        <p className="text-title">Губи</p>
+                        <p className="text-title">Шия+декольте</p>
                     </div>
                     <div className="cardList-footer">
-                        <span className="text-title">500 грн</span>
+                        <span className="text-title">900 грн</span>
                     </div>
                 </div>
 
             </div>
+
+            <h2 id='holova' className='container-tite'>ВІЇ</h2>
 
             <div className="card-container">
                 <div className="cardList">
                     <div className="cardList-img" style={{ backgroundImage: `url(${PriceListIMG10})` }}></div>
                     <div className="cardList-info">
-                        <p className="text-title">Мезотерапія брів</p>
-                    </div>
-                    <div className="cardList-footer">
-                        <span className="text-title">700 грн</span>
-                    </div>
-                </div>
+                        <p className="text-title">Ламінування +<br/>фарбування брів</p>
 
-                <div className="cardList">
-                    <div className="cardList-img" style={{ backgroundImage: `url(${PriceListIMG11})` }}></div>
-                    <div className="cardList-info">
-                        <p className="text-title">Кільця Венери</p>
                     </div>
                     <div className="cardList-footer">
-                        <span className="text-title">1300 грн</span>
+                        <span className="text-title">800 грн</span>
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
