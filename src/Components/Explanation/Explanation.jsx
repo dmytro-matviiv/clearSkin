@@ -1,7 +1,8 @@
 import './Explanation.css';
 import React from 'react';
-import Explanation_image1 from '../../assets/Explanation1.jpg';
-import Explanation_image2 from '../../assets/Explanation2.png';
+import exp1 from '../../assets/Explanation1.jpg';
+import exp2 from '../../assets/Explanation2.png';
+
 
 const Explanation = () => {
   return (
@@ -12,14 +13,14 @@ const Explanation = () => {
 
         <div className="explanation_text">
           <div className="button_wrapper">
-            <a href="https://www.instagram.com/royalskin_rivne/" className="red-button">Записатися</a>
+            <a href="https://docs.google.com/forms/d/1Q5aJkw_XuXTIIEUhMmt6b_KZ6iEDVq6GTg7dMkujlzc/edit" className="red-button">Записатися</a>
           </div>
           <h2>Мікронідлінг</h2>
           <p>Мікронідлінг – це точковий (фракційний) вплив на шкіру мікроскопічних голок з лазерним заточенням.
             Тому він має кілька назв, одна з яких – фракційна мезотерапія. Його умовно поділяють на дві великі категорії:</p>
         </div>
         <div className="explanation_image_wrapper">
-          <img className="explanation_image" src={Explanation_image1} alt="Пояснення 1" />
+          <img src={exp1} alt="Пояснення1" className="explanation_image" />
         </div>
       </div>
 
@@ -35,7 +36,7 @@ const Explanation = () => {
             ламінування брів і вій, що для цього потрібно, як доглядати брови і вії після ламінування та багато інших нюансів.</p>
         </div>
         <div className="explanation_image_wrapper">
-          <img className="explanation_image" src={Explanation_image2} alt="Пояснення 2" />
+         <img src={exp2} alt="Пояснення1" className="explanation_image" />
         </div>
       </div>
 

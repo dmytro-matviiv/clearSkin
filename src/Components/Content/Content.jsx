@@ -1,74 +1,79 @@
 import './Content.css';
-import React from 'react';
-import image1 from '../../assets/Whywe1.jpg';
-import image2 from '../../assets/Whywe2.jpg';
-import image3 from '../../assets/micronid_photo.jpg';
+import React, { useEffect, useState } from 'react';
 
+const defaultCards = [
+  {
+    id: 1,
+    image: 'Whywe1.jpg',
+    title: 'Підтвердження професіоналізму та якості',
+    desc: 'Ми постійно вдосконалюємо свої навички...',
+    actionLink: 'https://www.instagram.com/royalskin_rivne/',
+    actionText: 'Переглянути',
+  },
+  {
+    id: 2,
+    image: 'Whywe2.jpg',
+    title: 'Найсучасніше обладнання для вашої краси',
+    desc: 'Відкрийте для себе можливості...',
+    actionLink: 'https://www.instagram.com/royalskin_rivne/',
+    actionText: 'Ознайомитись',
+  },
+  {
+    id: 3,
+    image: 'micronid_photo.jpg',
+    title: 'Видимий результат після першої процедури',
+    desc: 'Шкіра стає гладкою...',
+    actionLink: 'https://www.instagram.com/royalskin_rivne/',
+    actionText: 'Результати',
+  }
+];
+
+const getImage = (fileName) => {
+  try {
+    return require(`../../assets/${fileName}`);
+  } catch (err) {
+    console.error("Image not found:", fileName);
+    return null;
+  }
+};
 
 const Content = () => {
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('contentCards');
+    if (saved) {
+      setCards(JSON.parse(saved));
+    } else {
+      setCards(defaultCards);
+    }
+  }, []);
+
   return (
     <div id='whywe'>
       <h2 className="container-tite">ЧОМУ САМЕ МИ?</h2>
       <div className="card-container">
-        <div className="card">
-          <div className="image" style={{ backgroundImage: `url(${image1})` }}></div> {/* Вставляємо картинку як фон */}
-          <div className="content">
-            <a href="#">
-              <span className="title">
-                Підтвердження професіоналізму та якості
-              </span>
-            </a>
-            <p className="desc">
-              Ми постійно вдосконалюємо свої навички та знання у сфері мікронідлінгу, ламінування брів та вій. Ваше задоволення та безпека — наш головний пріоритет.
-            </p>
-
-            <a className="action" href="https://www.instagram.com/royalskin_rivne/">
-             Переглянути
-              <span aria-hidden="true"> → </span>
-            </a>
+        {cards.map(card => (
+          <div className="card" key={card.id}>
+            <div
+              className="image"
+              style={{ backgroundImage: `url(${getImage(card.image)})` }}
+            ></div>
+            <div className="content">
+              <a href="#">
+                <span className="title">{card.title}</span>
+              </a>
+              <p className="desc">{card.desc}</p>
+              <a className="action" href={card.actionLink} target="_blank" rel="noreferrer">
+                {card.actionText}
+                <span aria-hidden="true"> → </span>
+              </a>
+            </div>
           </div>
-        </div>
-
-        <div className="card">
-          <div className="image" style={{ backgroundImage: `url(${image2})` }}></div>
-          <div className="content">
-            <a href="#">
-              <span className="title">
-              Найсучасніше обладнання для вашої краси
-              </span>
-            </a>
-            <p className="desc">
-            Відкрийте для себе можливості професійного мікронідлінгу на новітньому обладнанні 
-            та ламінування брів для бездоганного вигляду кожного дня.
-            </p>
-            <a className="action" href="https://www.instagram.com/royalskin_rivne/">
-              Ознайомитись
-              <span aria-hidden="true"> → </span>
-            </a>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="image" style={{ backgroundImage: `url(${image3})` }}></div>
-          <div className="content">
-            <a href="#">
-              <span className="title">
-              Видимий результат після першої процедури
-              </span>
-            </a>
-            <p className="desc">
-            Шкіра стає гладкою, сяючою та зволоженою, а брови набувають ідеальної форми й природного блиску. Видимий ефект вже після першого сеансу.
-            </p>
-            <a className="action" href="https://www.instagram.com/royalskin_rivne/">
-              Результати
-              <span aria-hidden="true"> → </span>
-            </a>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
 };
 
 export default Content;
-
